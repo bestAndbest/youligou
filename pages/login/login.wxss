@@ -1,0 +1,20 @@
+/* pages/login/login.wxss */
+page{
+  width: 100%;
+  padding:40rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+image{
+  margin:80rpx 0;
+  width: 50%;
+  border-radius: 50%;
+}
+.btn1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:90rpx;
+  padding: 0;
+  
+}

@@ -1,0 +1,154 @@
+/* pages/cart/cart.wxss */
+.button{
+  margin: 20rpx auto;
+  width: 60%;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+}
+.cart-title{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 36rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  color: #333;
+  /* text-align: center; */
+  border-bottom: 2rpx solid #E64340;
+  border-top: 2rpx solid #E64340;
+}
+.cart{
+  font-weight: 400;
+  font-size: 36rpx;
+}
+.addrbox{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+}
+.name-number{
+  display: flex;
+  justify-content: space-between;
+}
+.goods{
+  display: flex;
+  padding: 20rpx 0;
+  align-items: center;
+  height: 160rpx;
+  border-bottom: 6rpx solid #f4f4f4;
+  overflow: hidden;
+
+}
+.goods-check{
+  text-align: center;
+  flex:3;
+}
+.goods-check checkbox{
+  width: 40rpx;
+}
+.img{
+  flex: 4;
+}
+.img image{
+  width: 100%;
+}
+.goods-info{
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 36rpx;
+  flex: 7;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.goods-txt{
+   display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+}
+.num-price{
+   display: flex;
+   font-size: 32rpx;
+   justify-content: space-between;
+}
+.price{
+  flex:6;
+  color: red;
+
+}
+.num{
+  flex: 4;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.goods-num,.num-button{
+  text-align: center;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.num-button{
+  background-color: #fff;
+  border: 2rpx solid #f4f4f4;
+  
+}
+.countbox{
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+  align-items: center;
+  font-size: 28rpx;
+  border-top: 2rpx solid #f4f4f4;
+}
+.sel-all{
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+.count{
+  flex: 4;
+  display: flex;
+}
+.total{
+  flex: 1;
+}
+.total-price{
+  color: red;
+  font-size: 32rpx;
+}
+.final-count{
+  background-color:#F8554F; 
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.del{
+  margin:10rpx 40rpx; 
+  text-align: center;
+  line-height: 60rpx;
+  width: 100rpx;
+  height: 60rpx;
+  color: #D6373A;
+  border: 2rpx solid #D6373A;
+  border-radius: 42%;
+}
+
+.without {
+  width: 80%;
+  margin: 60rpx;
+}

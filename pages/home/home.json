@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+   "w-swiper": "/components/w-swiper/w-swiper",
+  "w-recommend":"/components/w-recommend/w-recommend",
+  "w-search": "/components/w-search/w-search",
+  "w-floor": "/components/w-floor/w-floor"
+  },
+  "navigationBarTitleText": "优里购"
+}

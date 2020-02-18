@@ -1,0 +1,14 @@
+<!--components/w-floor/w-floor.wxml-->
+<view>
+  <block wx:for="{{floorList}}" wx:for-item="first" wx:for-index="i"wx:key="{{i}}">
+    <view class="floor_title"><image src="{{first.floor_title.image_src}}" mode="widthFix"/></view>
+    <view class="product_list">
+       <block wx:for="{{first.product_list}}" wx:for-item="second" wx:for-index="j"wx:key="{{name}}">
+         <navigator>
+             <image src="{{second.image_src}}" mode="{{j===0?'widthFix':scaleToFill}}"/>
+         </navigator>
+       </block>
+    </view>
+  
+  </block>
+</view>

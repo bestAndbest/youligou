@@ -1,0 +1,3 @@
+<!--components/w-backToTop/w-backToTop.wxml-->
+<view class=" backTop" bindtap="handleToTop">↑</view>
+<!-- ↑ -->

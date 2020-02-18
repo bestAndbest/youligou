@@ -1,0 +1,16 @@
+<!--components/w-navtab/w-navtab.wxml-->
+<view class="box">
+  <view class="tabs-container">
+    <view 
+    wx:for="{{tabs}}"
+    wx:key="{{index}}"
+    bindtap="handleTosel"
+    data-index="{{index}}"
+    class="tabs-nav {{item.isSelect?'sel':''}}">
+      {{item.value}}
+    </view>
+  </view>
+  <view class="tabs-content">
+    <slot/>
+  </view>
+</view>

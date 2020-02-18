@@ -1,0 +1,23 @@
+/* components/w-floor/w-floor.wxss */
+.floor_title image{
+  width: 100%;
+}
+.floor_title{
+  margin-top: 40rpx;
+}
+.product_list {
+  overflow: hidden;
+}
+.product_list navigator image{
+  float: left;
+  width:31.6%;
+}
+
+.product_list navigator image:nth-last-child(-n+4){
+  height:25.5vw;
+   border-left: 10rpx solid #fff;
+}
+.product_list navigator:nth-child(2) image,.product_list navigator:nth-child(3) image{
+  border-bottom: 10rpx solid #fff;
+}
+

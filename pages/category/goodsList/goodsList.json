@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "w-search": "/components/w-search/w-search",
+    "w-navtab": "/components/w-navtab/w-navtab",
+    "w-backToTop": "/components/w-backToTop/w-backToTop"
+  },
+  "navigationBarTitleText": "商品列表",
+  "enablePullDownRefresh": true
+}

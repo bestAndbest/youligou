@@ -1,0 +1,64 @@
+<!--pages/profile/profile.wxml-->
+<view class="header">
+  <image src="{{userInfo.avatarUrl?userInfo.avatarUrl:'/assets/imgs/me.png'}}" mode="widthFix" />
+  <navigator url="/pages/login/login" class="btn1" hidden="{{userInfo.nickName}}">登录</navigator>
+  <text hidden="{{!userInfo.nickName}}" >{{userInfo.nickName}}</text>
+</view>
+<view class="start">
+  <view class="start-item">
+    <text>0</text>
+    <text>收藏夹</text>
+  </view>
+  <view class="start-item">
+    <text>0</text>
+    <text>关注店铺</text>
+  </view>
+  <view class="start-item">
+    <text>0</text>
+    <text>足迹</text>
+  </view>
+  <view class="start-item">
+    <text>0</text>
+    <text>红包卡卷</text>
+  </view>
+</view>
+<!-- 我的订单 -->
+<view class="order-box">
+  <view class="myorder">我的订单</view>
+  <view class="order">
+    <view class="order-item">
+      <text class="iconfont icon-pay"></text>
+      <text>待付款</text>
+    </view>
+    <view class="order-item">
+      <text class="iconfont icon-huowu"></text>
+      <text>待发货</text>
+    </view>
+    <view class="order-item">
+      <text class="iconfont icon-bus"></text>
+      <text>待收货</text>
+    </view>
+    <view class="order-item">
+      <text class="iconfont icon-chat1"></text>
+      <text>评价</text>
+    </view>
+    <view class="order-item">
+      <text class="iconfont icon-jiage"></text>
+      <text>退款/售后</text>
+    </view>
+  </view>
+</view>
+<view class="other">
+  <text>收货地址管理</text>
+</view>
+<view class="other">
+  <text>联系客服</text><text>400-618-4000</text>
+</view>
+<view class="other">
+  <text>意见反馈</text>
+</view>
+<view class="other">
+  <text>关于我们</text>
+</view>
+
+

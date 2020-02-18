@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "w-swiper": "/components/w-swiper/w-swiper",
+    "w-backToTop": "/components/w-backToTop/w-backToTop"
+  },
+  "navigationBarTitleText": "商品详情"
+}

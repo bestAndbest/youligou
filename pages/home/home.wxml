@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<!-- 搜索 -->
+<w-search/>
+<!-- 轮播图 -->
+<w-swiper banner="{{banner}}" define='swiper'img="img2"/>
+<!-- 推荐 -->
+<w-recommend recommend="{{recommend}}"/>
+<!-- 楼层 -->
+<w-floor floorList="{{floorList}}"/>
+
+
+

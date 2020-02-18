@@ -1,0 +1,54 @@
+<!--pages/cart/cart.wxml-->
+<!-- ---------------------收货地址----------------------------- -->
+<button hidden="{{userAddress.userName}}" type ="warn" plain class="button" bindtap="handleAddLocation">添加收货地址</button>
+<view hidden="{{!userAddress.userName}}" class="addrbox">
+  <view class="name-number">
+    <text>收货人：{{userAddress.userName}}</text> <text>{{userAddress.telNumber}}</text>
+  </view>
+  <view class="user-addr">{{userAddress.provinceName}}{{userAddress.cityName}}{{userAddress.countyName}}{{userAddress.detailInfo}}</view>
+</view>
+<!-- --------------------- 购物车 ----------------------------- -->
+<view class="cart-title">
+  <view class="cart">购物车</view><view class="manager" bindtap="handleManager">{{manageComplete}}</view>
+</view>
+<block wx:if="{{cartData.length}}">
+  <block  class="goodsbox" wx:for="{{cartData}}" wx:key="{{index}}">
+    <view class="goods">
+      <view class="goods-check"><checkbox-group data-id="{{item.goods_id}}" bindchange="handleItemChange"><checkbox  checked="{{item.checked}}" /></checkbox-group></view>
+        <navigator class="img" url="/pages/category/goodsList/goodDetail/goodDetail?goods_id={{item.goods_id}}">
+          <image src="{{item.goods_small_logo}}"mode="widthFix"/>
+        </navigator>
+        <view class="goods-info" >
+          <navigator class="goods-txt" 
+          url="/pages/category/goodsList/goodDetail/goodDetail?goods_id={{item.goods_id}}">
+          {{item.goods_name}}</navigator>
+          <view class="num-price">
+            <view class="price">￥{{item.goods_price}}</view>
+            <view class="num">
+            <view class="num-button" data-id="{{item.goods_id}}" data-flag="{{-1}}" bindtap="handleAddDecre">-</view>
+            <view class="goods-num">{{item.num}}</view>
+            <view class="num-button" data-id="{{item.goods_id}}" data-flag="{{1}}" bindtap="handleAddDecre">+</view>
+            </view>
+          </view>
+        </view>
+    </view>
+  </block>
+  </block>
+<block wx:else ><image src="/assets/imgs/emptycart.png" class="without" mode="widthFix"/></block>
+<!-- --------------------- 结算 ----------------------------- -->
+<view class='countbox'>
+   <view class='sel-all'>
+     <checkbox-group bindchange="handleChange"><checkbox checked="{{isAllSel}}"/></checkbox-group>
+   <text>全选</text></view>
+
+   <view class='count' hidden="{{isDel}}">
+    <view class="total">
+      <view class="heji">
+        <view>合计：<text class="total-price">￥{{totalprice}}</text>
+        </view>包含运费</view>
+     </view>
+    <view class="final-count" bindtap="handlerToPay">结算（{{selNum}}）</view>
+   </view>
+    <view class="del" hidden="{{!isDel}}" bindtap="handleDelete">删除</view>
+</view>
+

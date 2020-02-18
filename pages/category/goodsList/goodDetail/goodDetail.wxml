@@ -1,0 +1,32 @@
+<!--pages/category/goodsList/goodDetail/goodDetail.wxml-->
+<w-swiper define='swiper' img='img2'  banner='{{goodsObj.pics}}'bind:PrevewImage="handlePrevewImage"/>
+<!-- 商品展示 -->
+<view class="goods-price">￥  {{goodsObj.goods_price}}</view>
+<view class="thegoods">
+  <view class="goods-name">{{goodsObj.goods_name}}</view>
+  <view class="goods-start"><text class="iconfont icon-star-thr"></text><view>收藏</view></view>
+</view>
+<!-- 富文本 -->
+<view class="txtimg">图文详情</view>
+<view class="richtext"><rich-text nodes="{{goodsObj.goods_introduce}}" ></rich-text></view>
+<!-- 底部 -->
+<view class="bottom">
+  <view class="tool-item">
+  <text class="iconfont icon-chat" ></text><text>联系客服</text>
+  <button open-type='contact'></button>
+  </view>
+   <view class="tool-item">
+   <text class="iconfont icon-share "></text><text>分享</text>
+   <button open-type='share'></button>
+   </view>
+    <navigator class="tool-item" open-type="switchTab" url="/pages/cart/cart">
+    <text class="iconfont icon-cart "></text><text>购物车</text>
+    </navigator>
+    <view class="addcart" bindtap="handleCartAdd">加入购物车</view>
+    <view class="nowbuy">立即购买</view>
+</view>
+<w-backToTop wx:if="{{isShowBack}}" bindtoTop="handleToTop"/>
+
+
+
+

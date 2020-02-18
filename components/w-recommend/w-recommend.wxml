@@ -1,0 +1,8 @@
+<!--components/w-recommend/w-recommend.wxml-->
+<view class="recommend">
+  <block  wx:for='{{recommend}}'wx:key="{{index}}">
+    <view class='recommend-item'>
+      <image src="{{item.image_src}}" mode="widthFix"/>
+    </view>
+  </block>
+</view>

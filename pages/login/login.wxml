@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+<image src="/assets/imgs/me.png" mode="widthFix"/>
+<button plain bindgetuserinfo="hanleLogin" 
+open-type="getUserInfo" class="btn1"
+style="background-color:#FF6979;border-color:#D84C29;color: #fff;"
+hidden="{{userInfo.nickName}}">登录</button>

@@ -1,0 +1,28 @@
+<!--pages/category/goodsDatail/goodsDatail.wxml-->
+<w-search/>
+<w-navtab tabs="{{tabs}}" bind:changeSel='handleChangeSel'>
+    <block wx:if='{{tabs[0].isSelect}}'>
+      <navigator  
+      wx:for='{{goods}}'
+      wx:key='{{item.goods_id}}' 
+      url="/pages/category/goodsList/goodDetail/goodDetail?goods_id={{item.goods_id}}"
+      class='goods-item'>
+        <view class="goods-left">
+          <image 
+          src="{{item.goods_small_logo||'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" 
+          mode="widthFix"/>
+        </view>
+        <view class="goods-right">
+          <view class="item-name">{{item.goods_name}}</view>
+          <view class="item-price">￥{{item.goods_price}}</view>
+        </view>
+       </navigator>
+       <view wx:if="{{isNone}}" class="nonedata">没数据了……</view>
+    </block>
+    <block wx:elif='{{tabs[1].isSelect}}'>1</block>
+    <block wx:elif='{{tabs[2].isSelect}}'>2</block>
+</w-navtab>
+<w-backToTop wx:if="{{isShowBack}}" bindtoTop="handleToTop"/>
+
+
+

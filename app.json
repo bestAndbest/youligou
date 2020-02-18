@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/cart/cart",
+    "pages/profile/profile",
+    "pages/category/category",
+    "pages/category/goodsList/goodsList",
+    "pages/category/goodsList/goodDetail/goodDetail",
+    "pages/cart/pay/pay",
+    "pages/search/search",
+    "pages/login/login"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FF6979",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#FF5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/imgs/home.png",
+        "selectedIconPath": "assets/imgs/home_active.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assets/imgs/category.png",
+        "selectedIconPath": "assets/imgs/category_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "assets/imgs/cart.png",
+        "selectedIconPath": "assets/imgs/cart_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/imgs/profile.png",
+        "selectedIconPath": "assets/imgs/profile_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap78.json"
+}

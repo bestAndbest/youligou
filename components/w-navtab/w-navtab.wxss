@@ -1,0 +1,19 @@
+/* components/w-navtab/w-navtab.wxss */
+.box{
+  width: 100%;
+}
+.tabs-container{
+  display: flex;
+  font-size: 36rpx;
+  border-bottom:4rpx solid #f4f4f4;
+}
+.tabs-nav{
+  padding: 10rpx;
+  flex: 1;
+  text-align: center
+}
+.sel{
+  color: #ff5777;
+  border-bottom:4rpx solid #ff5777;
+}
+

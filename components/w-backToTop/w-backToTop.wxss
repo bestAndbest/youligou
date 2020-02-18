@@ -1,0 +1,15 @@
+/* components/w-backToTop/w-backToTop.wxss */
+.backTop{
+  position: fixed;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 40rpx;
+  color: #fff;
+  z-index: 6;
+  right: 30rpx;
+  bottom: 120rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: #ff5777;
+}

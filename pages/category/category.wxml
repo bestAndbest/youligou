@@ -1,0 +1,39 @@
+<!--pages/category/category.wxml-->
+<view class="cates">
+<!-- 搜索 -->
+    <w-search/>
+    <view class="cates_container">
+    <!-- 左边菜单 -->
+      <scroll-view scroll-y  class="left">
+        <view
+         wx:for="{{leftMenuList}}"
+         wx:key='{{index}}' 
+         bindtap="handleToContent" 
+         data-index="{{index}}"
+         class="menu-item {{index===currentIndex?'menu-active':''}}">
+         {{item}}</view>
+      </scroll-view> 
+         <!-- 右边内容 -->
+       <scroll-view scroll-y scroll-top="{{scrollTop}}" class="right">
+          <view class="children-item">
+              <block wx:for="{{rightContent}}" wx:for-item='item1' wx:key='{{item1.cat_name}}'>
+                <view class="title">{{item1.cat_name}}</view>
+                <view class="cate">
+
+                <navigator 
+                url="/pages/category/goodsList/goodsList?cid={{item2.cat_id}}" 
+                wx:for="{{item1.children}}"
+                 wx:for-item='item2' 
+                 wx:key='{{index}}'
+                  class="img-txt">
+                    <image src="{{item2.cat_icon}}" mode="widthFix"/>
+                    <view>{{item2.cat_name}}</view>
+                  </navigator>
+
+                </view>
+              </block>
+          </view>
+       </scroll-view> 
+    </view>
+</view>
+

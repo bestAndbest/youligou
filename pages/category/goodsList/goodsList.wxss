@@ -1,0 +1,39 @@
+/* pages/category/goodsDatail/goodsDatail.wxss */
+ .goods-item{
+  display: flex;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx 0 30rpx;
+  /* justify-content: space-evenly; */
+  border-bottom: 4rpx solid #f4f4f4;
+}
+.goods-left{
+ width: 40%;
+}
+.goods-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 32rpx;
+  width: 60%;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+.item-name{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+}
+.item-price{
+  color: red;
+}
+.goods-left image{
+  width: 90%;
+}
+.nonedata{
+  display: flex;
+  margin: 20rpx;
+  color: #999;
+  font-size: 32rpx;
+  justify-content: center;
+}
